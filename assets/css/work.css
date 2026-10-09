@@ -1,0 +1,431 @@
+/* My Work — research panels (extends Dimension's base styles) */
+
+.r-panel {
+	--r-line: rgba(255, 255, 255, 0.15);
+	--r-muted: rgba(255, 255, 255, 0.6);
+	--r-soft: rgba(255, 255, 255, 0.78);
+	--r-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+	.r-panel .r-lede {
+		color: var(--r-soft);
+		margin-bottom: 1.75rem;
+	}
+
+/* ---- Shared: meta row, title, description, severity, tags ---- */
+
+	.r-panel .r-meta {
+		align-items: center;
+		color: var(--r-muted);
+		display: flex;
+		flex-wrap: wrap;
+		font-family: var(--r-mono);
+		font-size: 0.75rem;
+		gap: 0.35rem 0.75rem;
+		margin-bottom: 0.4rem;
+	}
+
+		.r-panel .r-id {
+			color: #ffffff;
+			font-weight: 600;
+		}
+
+		.r-panel .r-meta time {
+			margin-left: auto;
+		}
+
+	.r-panel .r-title {
+		font-size: 1rem;
+		letter-spacing: 0;
+		line-height: 1.4;
+		margin: 0 0 0.25rem 0;
+		text-transform: none;
+	}
+
+	.r-panel .r-desc {
+		color: var(--r-soft);
+		font-size: 0.9rem;
+		line-height: 1.55;
+		margin: 0 0 0.65rem 0;
+	}
+
+		.r-panel .r-desc code {
+			font-family: var(--r-mono);
+			font-size: 0.8rem;
+			margin: 0;
+			padding: 0.1rem 0.35rem;
+		}
+
+/* Severity (CVSS v3.1 bands) */
+
+	.r-panel .r-sev {
+		border-radius: 3px;
+		color: #1b1f22;
+		font-size: 0.68rem;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		padding: 0.05rem 0.45rem;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+		.r-panel .r-sev.is-low      { background: #69db7c; }
+		.r-panel .r-sev.is-medium   { background: #ffb347; }
+		.r-panel .r-sev.is-high     { background: #ff7a45; }
+		.r-panel .r-sev.is-critical { background: #ff4d4f; color: #ffffff; }
+
+/* Tags */
+
+	.r-panel .r-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		.r-panel .r-tags li {
+			border: solid 1px rgba(255, 255, 255, 0.25);
+			border-radius: 3px;
+			color: rgba(255, 255, 255, 0.7);
+			font-size: 0.65rem;
+			letter-spacing: 0.06rem;
+			line-height: 1.6;
+			padding: 0 0.5rem;
+			text-transform: uppercase;
+		}
+
+			.r-panel .r-tags li.is-sqli { border-color: rgba(255, 107, 107, 0.6); color: #ff8787; }
+			.r-panel .r-tags li.is-xss  { border-color: rgba(255, 179, 71, 0.6);  color: #ffc069; }
+			.r-panel .r-tags li.is-auth { border-color: rgba(116, 192, 252, 0.6); color: #91d0ff; }
+
+/* ---- Skills grid (What I Do) ---- */
+
+	.r-panel .r-skills {
+		display: grid;
+		gap: 0.9rem;
+		grid-template-columns: repeat(2, 1fr);
+		list-style: none;
+		margin: 0 0 1.5rem 0;
+		padding: 0;
+	}
+
+		.r-panel .r-skills li {
+			border: solid 1px var(--r-line);
+			border-radius: 4px;
+			padding: 1.1rem 1.15rem;
+		}
+
+		.r-panel .r-skills h4 {
+			font-size: 0.95rem;
+			letter-spacing: 0;
+			margin: 0 0 0.4rem 0;
+			text-transform: none;
+		}
+
+		.r-panel .r-skills p {
+			color: var(--r-soft);
+			font-size: 0.85rem;
+			line-height: 1.5;
+			margin: 0;
+		}
+
+	@media screen and (max-width: 480px) {
+
+		.r-panel .r-skills {
+			grid-template-columns: 1fr;
+		}
+
+	}
+
+	/* More breathing room above the What I Do call-to-action */
+	#What_I_Do .actions {
+		margin-top: 2rem;
+	}
+
+/* ---- Stats (list panel only) ---- */
+
+	#My_Work .r-stats {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.75rem;
+		list-style: none;
+		margin: 0 0 2.75rem 0;
+		padding: 0;
+	}
+
+		#My_Work .r-stats li {
+			border: solid 1px var(--r-line);
+			border-radius: 4px;
+			padding: 0.9rem 1rem;
+		}
+
+		#My_Work .r-stats strong {
+			display: block;
+			font-family: var(--r-mono);
+			font-size: 1.75rem;
+			font-weight: 600;
+			line-height: 1.1;
+			margin-bottom: 0.3rem;
+		}
+
+		#My_Work .r-stats span {
+			color: var(--r-muted);
+			display: block;
+			font-size: 0.65rem;
+			letter-spacing: 0.12rem;
+			line-height: 1.3;
+			text-transform: uppercase;
+		}
+
+/* Section headings (list panel) */
+
+	#My_Work .r-heading {
+		align-items: baseline;
+		display: flex;
+		gap: 0.6rem;
+		margin-bottom: 0.75rem;
+	}
+
+		#My_Work .r-heading small {
+			color: var(--r-muted);
+			font-family: var(--r-mono);
+			font-size: 0.75rem;
+			letter-spacing: 0;
+		}
+
+/* Entry list */
+
+	#My_Work .r-list {
+		border-top: solid 1px var(--r-line);
+		list-style: none;
+		margin: 0 0 2.75rem 0;
+		padding: 0;
+	}
+
+	#My_Work .r-item {
+		border-bottom: solid 1px var(--r-line);
+		padding: 0;
+	}
+
+		#My_Work .r-item > a {
+			border-bottom: 0;
+			color: inherit;
+			display: block;
+			padding: 1.1rem 2.5rem 1.1rem 1rem;
+			position: relative;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+			/* accent bar */
+			#My_Work .r-item > a:before {
+				background: #ffffff;
+				bottom: 0;
+				content: '';
+				left: 0;
+				position: absolute;
+				top: 0;
+				transform: scaleY(0);
+				transform-origin: top;
+				transition: transform 0.25s ease-in-out;
+				width: 2px;
+			}
+
+			/* open-detail chevron */
+			#My_Work .r-item > a:after {
+				content: '\203A';
+				font-size: 1.3rem;
+				line-height: 1;
+				opacity: 0.35;
+				position: absolute;
+				right: 1.1rem;
+				top: 1rem;
+				transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+			}
+
+			#My_Work .r-item > a:hover {
+				background-color: rgba(255, 255, 255, 0.05);
+			}
+
+				#My_Work .r-item > a:hover:before {
+					transform: scaleY(1);
+				}
+
+				#My_Work .r-item > a:hover:after {
+					opacity: 1;
+					transform: translateX(3px);
+				}
+
+	#My_Work .r-item .r-title {
+		font-weight: 600;
+	}
+
+/* External-link entries (write-ups) keep the diagonal arrow */
+
+	#My_Work .r-item > a.is-ext:after {
+		content: '\2197';
+		font-size: 1rem;
+		top: 1.1rem;
+	}
+
+		#My_Work .r-item > a.is-ext:hover:after {
+			transform: translate(2px, -2px);
+		}
+
+/* ---- Detail panels ---- */
+
+	/* Long product names must wrap (template forces width:max-content on .major) */
+	.r-detail h2.major {
+		font-size: 1.5rem;
+		letter-spacing: 0.1rem;
+		max-width: 100%;
+		overflow-wrap: anywhere;
+		width: auto;
+	}
+
+	.r-detail .r-meta,
+	.r-detail .r-tags {
+		margin-bottom: 1.25rem;
+	}
+
+	.r-detail h3 {
+		border-bottom: solid 1px var(--r-line);
+		margin: 2rem 0 1rem 0;
+		padding-bottom: 0.4rem;
+	}
+
+	.r-detail p {
+		color: var(--r-soft);
+		margin-bottom: 1rem;
+	}
+
+	.r-detail .r-facts {
+		list-style: none;
+		margin: 0 0 1rem 0;
+		padding: 0;
+	}
+
+		.r-detail .r-facts li {
+			display: grid;
+			gap: 0.25rem 1rem;
+			grid-template-columns: 7.5rem 1fr;
+			padding: 0.4rem 0;
+		}
+
+			.r-detail .r-facts li + li {
+				border-top: solid 1px rgba(255, 255, 255, 0.08);
+			}
+
+		.r-detail .r-facts dt,
+		.r-detail .r-facts .r-key {
+			color: var(--r-muted);
+			font-size: 0.7rem;
+			letter-spacing: 0.1rem;
+			padding-top: 0.15rem;
+			text-transform: uppercase;
+		}
+
+		.r-detail .r-facts .r-val {
+			color: #ffffff;
+		}
+
+			.r-detail .r-facts .r-val code {
+				font-family: var(--r-mono);
+				font-size: 0.75rem;
+				margin: 0;
+				padding: 0.1rem 0.35rem;
+				word-break: break-all;
+			}
+
+	.r-detail .r-poc {
+		background: rgba(0, 0, 0, 0.35);
+		border: solid 1px var(--r-line);
+		border-radius: 4px;
+		color: #e6e6e6;
+		display: block;
+		font-family: var(--r-mono);
+		font-size: 0.78rem;
+		line-height: 1.6;
+		margin: 0 0 1rem 0;
+		overflow-x: auto;
+		padding: 1rem 1.1rem;
+		white-space: pre;
+	}
+
+	.r-detail .r-steps {
+		color: var(--r-soft);
+		margin: 0 0 1rem 0;
+		padding-left: 1.25em;
+	}
+
+		.r-detail .r-steps li {
+			margin-bottom: 0.5rem;
+			padding-left: 0.25em;
+		}
+
+		.r-detail .r-steps strong {
+			color: #ffffff;
+			font-weight: 600;
+		}
+
+	.r-detail .r-back {
+		margin-top: 0.5rem;
+	}
+
+/* ---- Staggered reveal (list panel) ---- */
+
+	#My_Work.r-anim .r-reveal {
+		opacity: 0;
+		transform: translateY(0.5rem);
+		transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+	}
+
+	#My_Work.r-anim.active .r-reveal {
+		opacity: 1;
+		transform: none;
+		transition: opacity 0.28s ease-out, transform 0.28s ease-out;
+		transition-delay: calc(var(--i, 0) * 26ms + 30ms);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+
+		#My_Work.r-anim .r-reveal,
+		#My_Work.r-anim.active .r-reveal {
+			opacity: 1;
+			transform: none;
+			transition: none;
+		}
+
+	}
+
+/* ---- Small screens ---- */
+
+	@media screen and (max-width: 480px) {
+
+		#My_Work .r-stats {
+			gap: 0.5rem;
+		}
+
+			#My_Work .r-stats li {
+				padding: 0.75rem 0.6rem;
+			}
+
+			#My_Work .r-stats strong {
+				font-size: 1.4rem;
+			}
+
+		#My_Work .r-item > a {
+			padding: 1rem 2rem 1rem 0.75rem;
+		}
+
+			#My_Work .r-item > a:after {
+				right: 0.7rem;
+			}
+
+		.r-detail .r-facts li {
+			grid-template-columns: 1fr;
+			gap: 0.1rem;
+		}
+
+	}
